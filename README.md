@@ -6,7 +6,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 ### Motherboard
 
 | Part  | Description |
-| ------------- | ------------- |
+| :-: | :-: |
 | CPU     | Intel Core I5-9300H Coffeelake |
 | IGPU    | Intel UHD 630 |
 | DGPU    | Nvidia GTX 1650 |
@@ -21,21 +21,31 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 ### peripherals   
 
 | Part  | Description |
-|-|-|
+| :-: | :-: |
 | pointer | Synaptics SMBus Touchpad |
 | keyboard| Standard PS/2 Keyboard |
 | Webcam | HP Wide Vision HD Camera |
+| Cardreader | Realtek 522A |
+| Ports | 3x USB3.1 |
+| | Type-c (Intel Linked)|
+| | HDMI (Nvidia linked)|
+| | Mini-Displayport|
+| | AUX/MIC|
+## Software specifications
 
-
-# Software specifications
 | Part  | Description |
-| ------------- | ------------- |
-|Opencore version |
+| :-: | :-: |
+|Opencore version | 0.7.8 |
 |Bios version |F.23 Rev.A|
 |Audio Codec |ALC295|
 
 # What is working
+- [ ] Display
+- [ ]
+ 
+ 
 # What needs to be fixed
 # What is not working
 # Installation instructions
 # references
+https://github.com/0xFireWolf/RealtekCardReader
