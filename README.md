@@ -65,7 +65,7 @@ underneath here you will find a general overview of what needs to be fixed, and 
 
 ### Wireless
 - [x] Intel WIFI
-- [x] Intel Bluetooth
+- [ ] Intel Bluetooth
 - [ ] Airdrop
 - [ ] Handoff
 - [ ] Sidecar
@@ -77,11 +77,11 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [ ] Trim support
 
 ### Peripherals
-- [ ] Trackpad
-- [ ] Keyboard
-- [ ] Webcam
-- [ ] USB
-- [ ] Type-C
+- [x] Trackpad (no trackpad buttons)
+- [x] Keyboard (fn buttons need fixup)
+- [x] Webcam
+- [x] USB
+- [x] Type-C (dongle non-functional)
 
 ### Services
 - [ ] Filefautling
@@ -90,15 +90,29 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [ ] Keyboard shortcuts 
 
 ## What needs to be fixed (Issues)
-- wake by keyboard
-- Type-c to HDMI dongle
-- trackpad buttons not working
+
+- [ ] Type-c-to-HDMI dongle
+- [ ] trackpad buttons non-functional
+- [ ] "NON-HP battery" warning
+- [ ] Battery percentage Readout freeze
+- [ ] Battery not charging sometimes
+- [ ] wake laptop by keyboard
+- [ ] Can't turn on keyboard backlighting
+- [ ] replace wifi card with broadcom
+
+### Optional
+- [ ] replace Intel wifi card with Broadcom
+- [x] Buy Type-c-to-HDMI dongle
+- [ ] Enable Bootchime
+- [ ] Fix RTC timezone difference between windows and MacOS
+
 
 ## What will never work
 | What  | Why |
 | :-: | :-: |
 | dGPU | Apple dropped support for Nvidia webdrivers since High Sierra. Besides there were never MacOS drivers for the gtx 16-series.|
-| HDMI | The built-in HDMI port on this laptop is linked to dGPU. Unfortunately, there are no drivers and the dGPU is disabled.
+| HDMI | The built-in HDMI port on this laptop is linked to dGPU. Unfortunately, there are no drivers and the dGPU is disabled.|
+|Airdrop| Airdrop and Handoff are not supported on Intel wifi chips. For this, a Broadcom wifi chip needs to be acquired.|
 
 # Installation instructions
 # references
