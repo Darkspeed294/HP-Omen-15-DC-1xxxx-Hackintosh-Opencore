@@ -1,0 +1,1 @@
+# HP-Omen-15-DC-1xxxx-Hackintosh-Opencore
