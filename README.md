@@ -34,7 +34,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 | | AUX/MIC|
 ## Software specifications
 
-| Part  | Description |
+| Version  | Description |
 | :-: | :-: |
 |Opencore version | 0.7.8 |
 |MacOS version| 12.2.1 |
