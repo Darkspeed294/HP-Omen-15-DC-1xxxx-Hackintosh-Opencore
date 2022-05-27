@@ -60,8 +60,8 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [x] CPU power management
 - [x] Manual/auto/lid sleep
 - [x] Shutdown and restart
-- [ ] Battery readout
-- [ ] Battery charging
+- [x] Battery readout
+- [x] Battery charging
 
 ### Wireless
 - [x] Intel WIFI
@@ -74,7 +74,7 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [x] NVME working
 - [x] SSD working
 - [x] NVRAM
-- [ ] Trim support
+- [x] Trim support
 
 ### Peripherals
 - [x] Trackpad (no trackpad buttons)
@@ -85,17 +85,17 @@ underneath here you will find a general overview of what needs to be fixed, and 
 
 ### Services
 - [ ] Filefautling
-- [ ] System Intergrity Protection
-- [ ] Multibooting
+- [x] System Intergrity Protection
+- [x] Multibooting
 - [ ] Keyboard shortcuts 
 
 ## What needs to be fixed (Issues)
 
 - [ ] Type-c-to-HDMI dongle
 - [ ] trackpad buttons non-functional
-- [ ] "NON-HP battery" warning
-- [ ] Battery percentage Readout freeze
-- [ ] Battery not charging sometimes
+- [x] "NON-HP battery" warning
+- [x] Battery percentage Readout freeze
+- [x] Battery not charging sometimes
 - [ ] wake laptop by keyboard
 - [ ] Can't turn on keyboard backlighting
 - [ ] replace wifi card with broadcom
