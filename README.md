@@ -116,5 +116,14 @@ underneath here you will find a general overview of what needs to be fixed, and 
 |Airdrop| Airdrop and Handoff are not supported on Intel wifi chips. For this, a Broadcom wifi chip needs to be acquired.|
 
 # Installation instructions
+- download and mount a macos installer onto an usb stick using opencore guide online
+- mount the efi partition of the usb stick with mountefi tool
+- download and drop the efi folder of mine onto your usb stick
+- using propertree en gensmbios, fill in the missing smbios details
+- boot your hp omen into bios and put in the appropriate settings
+- boot opencore from the usb and install macos using the installer
+- after installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
+- ready and done. unplug, reboot and stash that usb somewhere!
+
 # references
 🫥
