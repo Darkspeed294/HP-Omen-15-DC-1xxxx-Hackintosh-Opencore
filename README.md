@@ -36,7 +36,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 
 | Version  | Description |
 | :-: | :-: |
-|Opencore version | 0.7.8 |
+|Opencore version | 0.8.0 |
 |MacOS version| 12.4 |
 |Bios version |F.23 Rev.A|
 |Audio Codec |Realtek ALC295|
@@ -44,6 +44,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 # Functionality
 The functionality of the laptop that is tested and working is precisely described in the document "Checklist". 
 underneath here you will find a general overview of what needs to be fixed, and also what is and what is not working.
+// i lost the file somewhere on my laptop, will upload if i find it again!😓
 
 ### Graphical
 - [x] IGPU Graphics acceleration 
@@ -116,4 +117,4 @@ underneath here you will find a general overview of what needs to be fixed, and 
 
 # Installation instructions
 # references
-https://github.com/0xFireWolf/RealtekCardReader
+🫥
