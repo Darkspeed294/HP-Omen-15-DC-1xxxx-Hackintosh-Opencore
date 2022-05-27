@@ -127,3 +127,4 @@ underneath here you will find a general overview of what needs to be fixed, and 
 
 # references
 🫥
+https://dortania.github.io/OpenCore-Install-Guide/
