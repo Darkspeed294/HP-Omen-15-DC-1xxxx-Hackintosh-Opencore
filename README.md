@@ -36,7 +36,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 
 | Version  | Description |
 | :-: | :-: |
-|Opencore version | 0.8.0 |
+|Opencore version | 0.8.1 |
 |MacOS version| 12.4 |
 |Bios version |F.23 Rev.A|
 |Audio Codec |Realtek ALC295|
