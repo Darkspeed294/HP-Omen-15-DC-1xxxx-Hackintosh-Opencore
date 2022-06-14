@@ -1,6 +1,12 @@
 # HP-Omen-15-DC-1xxxx-Hackintosh-Opencore
 
 This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. In general this hackintosh project works on all HP Omen 15 DC-1xxxxx laptops with a UHD 630 and a proper SSD. 
+![IMG_4645](https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg)
+![![Screenshot 2022-06-14 at 04 59 27](https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png)
+![Screenshot 2022-06-14 at 04 56 49](https://user-images.githubusercontent.com/84881650/173489944-e32961d0-0837-4961-8d45-5c23dd7ecea7.png)
+![Screenshot 2022-06-14 at 05 08 12](https://user-images.githubusercontent.com/84881650/173489867-583de278-32a9-4345-8fff-6988a80b878b.png)
+![IMG_4641](https://user-images.githubusercontent.com/84881650/173489891-49daaa1c-a5bf-44ec-9a77-a76a5ec20344.jpeg)
+
 # specifications
 ## Hardware specifications
 ### Motherboard
@@ -15,8 +21,8 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 | SSD     | Samsung SSD 840 PRO Series (120GB) | 
 | Display | 1080p IPS generic shit |
 | Ethernet| Realtek RTL8111|
-| Wireless| Intel Wireless AC 9560 160Mhz |
-| Chipset | HM470 |
+| Wireless| Broadcom BCM94352Z |
+| Chipset | HM370 |
 
 ### peripherals   
 
@@ -36,15 +42,15 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 
 | Version  | Description |
 | :-: | :-: |
-|Opencore version | 0.8.1 |
-|MacOS version| 12.4 |
+|Opencore version | 0.8.2 commit |
+|MacOS version| 13.0 dev beta 1 |
 |Bios version |F.23 Rev.A|
 |Audio Codec |Realtek ALC295|
 
 # Functionality
 The functionality of the laptop that is tested and working is precisely described in the document "Checklist". 
 underneath here you will find a general overview of what needs to be fixed, and also what is and what is not working.
-// i lost the file somewhere on my laptop, will upload if i find it again!😓
+- i lost the file somewhere on my laptop, will upload if i find it again!😓
 
 ### Graphical
 - [x] IGPU Graphics acceleration 
@@ -65,11 +71,11 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [x] Battery charging
 
 ### Wireless
-- [x] Intel WIFI
-- [ ] Intel Bluetooth
-- [ ] Airdrop
-- [ ] Handoff
-- [ ] Sidecar
+- [x] WIFI
+- [x] Bluetooth
+- [x] Airdrop
+- [x] Handoff
+- [x] Sidecar
 
 ### Disk
 - [x] NVME working
@@ -85,26 +91,26 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [x] Type-C (dongle non-functional)
 
 ### Services
-- [ ] Filefautling
+- [x] Filefautling
 - [x] System Intergrity Protection
 - [x] Multibooting
-- [ ] Keyboard shortcuts 
+- [x] Keyboard shortcuts 
 
 ## What needs to be fixed (Issues)
 
 - [ ] Type-c-to-HDMI dongle
-- [ ] trackpad buttons non-functional
+- [x] trackpad buttons non-functional
 - [x] "NON-HP battery" warning
 - [x] Battery percentage Readout freeze
 - [x] Battery not charging sometimes
 - [ ] wake laptop by keyboard
 - [ ] Can't turn on keyboard backlighting
-- [ ] replace wifi card with broadcom
+- [x] replace wifi card with broadcom
 
 ### Optional
-- [ ] replace Intel wifi card with Broadcom
+- [x] replace Intel wifi card with Broadcom
 - [x] Buy Type-c-to-HDMI dongle
-- [ ] Enable Bootchime
+- [x] Enable Bootchime
 - [ ] Fix RTC timezone difference between windows and MacOS
 
 
