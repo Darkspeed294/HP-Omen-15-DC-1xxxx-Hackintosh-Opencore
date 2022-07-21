@@ -1,6 +1,9 @@
 # HP-Omen-15-DC-1xxxx-Hackintosh-Opencore
 
 This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. In general this hackintosh project works on all HP Omen 15 DC-1xxxxx laptops with a UHD 630 and a proper SSD. 
+![IMG_5100](https://user-images.githubusercontent.com/84881650/180301826-456d8baa-986c-4070-a097-81b5d4ed4c7d.jpeg)
+![IMG_5099](https://user-images.githubusercontent.com/84881650/180301847-35a497ab-5682-43bb-b726-a19bf1499c77.jpeg)
+
 ![IMG_4645](https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg)
 ![![Screenshot 2022-06-14 at 04 59 27](https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png)
 ![Screenshot 2022-06-14 at 04 56 49](https://user-images.githubusercontent.com/84881650/173489944-e32961d0-0837-4961-8d45-5c23dd7ecea7.png)
@@ -98,7 +101,7 @@ underneath here you will find a general overview of what needs to be fixed, and 
 
 ## What needs to be fixed (Issues)
 
-- [ ] Type-c-to-HDMI dongle
+- [x] Type-c-to-HDMI dongle
 - [x] trackpad buttons non-functional
 - [x] "NON-HP battery" warning
 - [x] Battery percentage Readout freeze
@@ -125,7 +128,7 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - download and mount a macos installer onto an usb stick using opencore guide online
 - mount the efi partition of the usb stick with mountefi tool
 - download and drop the efi folder of mine onto your usb stick
-- using propertree en gensmbios, fill in the missing smbios details
+- using propertree and gensmbios, fill in the missing smbios details
 - boot your hp omen into bios and put in the appropriate settings
 - boot opencore from the usb and install macos using the installer
 - after installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
