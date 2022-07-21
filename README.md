@@ -46,8 +46,8 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 
 | Version  | Description |
 | :-: | :-: |
-|Opencore version | 0.8.2 commit |
-|MacOS version| 13.0 dev beta 1 |
+|Opencore version | 0.8.3 commit |
+|MacOS version| 13.0 dev beta 3 |
 |Bios version |F.23 Rev.A|
 |Audio Codec |Realtek ALC295|
 
@@ -92,7 +92,7 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [x] Keyboard (fn buttons need fixup)
 - [x] Webcam
 - [x] USB
-- [x] Type-C (dongle non-functional)
+- [x] Type-C 
 
 ### Services
 - [x] Filefautling
