@@ -32,8 +32,8 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 
 | device type  | Description |
 | :-: | :-: |
-| pointer | Synaptics SMBus Touchpad |
-| keyboard| Standard PS/2 Keyboard |
+| pointer | SYN327C |
+| keyboard| PNP0303 |
 | Webcam | HP Wide Vision HD Camera |
 | Cardreader | Realtek 522A |
 |USB controller| PCH USB 3.1 xHCI Host Controller |
@@ -48,7 +48,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 | :-: | :-: |
 |Opencore version | 0.8.3 commit |
 |MacOS version| 13.0 dev beta 3 |
-|Bios version |F.23 Rev.A|
+|Bios version |F.24 Rev.A|
 |Audio Codec |Realtek ALC295|
 
 # Functionality
@@ -103,7 +103,7 @@ underneath here you will find a general overview of what needs to be fixed, and 
 ## What needs to be fixed (Issues)
 
 - [x] Type-c-to-HDMI dongle
-- [x] trackpad buttons non-functional
+- [-] trackpad buttons non-functional
 - [x] "NON-HP battery" warning
 - [x] Battery percentage Readout freeze
 - [x] Battery not charging sometimes
