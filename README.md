@@ -4,15 +4,15 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 <summary>Screenshots</summary>
 <details>
     <summary>Ventura 13.6</summary>
-    ![IMG_4645](https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg)
+![IMG_4645](https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg)
+</details>
+    
 ![![Screenshot 2022-06-14 at 04 59 27](https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png)
 ![Screenshot 2022-06-14 at 04 56 49](https://user-images.githubusercontent.com/84881650/173489944-e32961d0-0837-4961-8d45-5c23dd7ecea7.png)
 ![Screenshot 2022-06-14 at 05 08 12](https://user-images.githubusercontent.com/84881650/173489867-583de278-32a9-4345-8fff-6988a80b878b.png)
 ![IMG_4641](https://user-images.githubusercontent.com/84881650/173489891-49daaa1c-a5bf-44ec-9a77-a76a5ec20344.jpeg)
 ![IMG_5100](https://user-images.githubusercontent.com/84881650/180302364-be0c7a2d-2448-45d7-b06d-de74bb020d7d.jpeg)
 ![IMG_5099](https://user-images.githubusercontent.com/84881650/180302389-261ea264-b55c-4b0e-a165-48f405692024.jpeg)
-</details>
-
 
 # specifications
 ## Hardware specifications
