@@ -22,10 +22,10 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 | DGPU    | Nvidia GTX 1650 |
 | RAM     | 16GB 2667 MHz DDR4 SODIMM |
 | NVME    | Toshiba KXG60znv256G (240GB) |
-| SSD     | Samsung SSD 840 PRO Series (120GB) | 
+| SSD     | Samsung SSD 870 EVO Series (1TB) | 
 | Display | 1080p IPS generic shit |
 | Ethernet| Realtek RTL8111|
-| Wireless| Broadcom BCM94352Z |
+| Wireless| Broadcom BCM94360CS2 |
 | Chipset | HM370 |
 
 ### peripherals   
@@ -46,15 +46,12 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 
 | Version  | Description |
 | :-: | :-: |
-|Opencore version | 0.8.3 commit |
-|MacOS version| 13.0 dev beta 3 |
+|Opencore version | 0.9.8 commit |
+|MacOS version| 14.2 Sonoma |
 |Bios version |F.24 Rev.A|
 |Audio Codec |Realtek ALC295|
 
 # Functionality
-The functionality of the laptop that is tested and working is precisely described in the document "Checklist". 
-underneath here you will find a general overview of what needs to be fixed, and also what is and what is not working.
-- i lost the file somewhere on my laptop, will upload if i find it again!😓
 
 ### Graphical
 - [x] IGPU Graphics acceleration 
@@ -88,34 +85,34 @@ underneath here you will find a general overview of what needs to be fixed, and 
 - [x] Trim support
 
 ### Peripherals
-- [x] Trackpad (no trackpad buttons)
-- [x] Keyboard (fn buttons need fixup)
+- [x] Trackpad
+- [x] Keyboard
 - [x] Webcam
 - [x] USB
 - [x] Type-C 
 
 ### Services
-- [x] Filefautling
-- [x] System Intergrity Protection
+- [x] Filefaulting
+- [x] System Intergrity Protection (Sonoma and broadcom requires this off)
 - [x] Multibooting
 - [x] Keyboard shortcuts 
 
 ## What needs to be fixed (Issues)
 
 - [x] Type-c-to-HDMI dongle
-- [-] trackpad buttons non-functional
+- [x] trackpad buttons non-functional
 - [x] "NON-HP battery" warning
 - [x] Battery percentage Readout freeze
 - [x] Battery not charging sometimes
-- [ ] wake laptop by keyboard
-- [ ] Can't turn on keyboard backlighting
+- [-] wake laptop by keyboard (power button works)
+- [ ] Can't turn on keyboard backlighting 
 - [x] replace wifi card with broadcom
 
 ### Optional
 - [x] replace Intel wifi card with Broadcom
 - [x] Buy Type-c-to-HDMI dongle
 - [x] Enable Bootchime
-- [ ] Fix RTC timezone difference between windows and MacOS
+- [x] Fix RTC timezone difference between windows and MacOS (can be fixed in windows)
 
 
 ## What will never work
@@ -126,14 +123,23 @@ underneath here you will find a general overview of what needs to be fixed, and 
 |Airdrop| Airdrop and Handoff are not supported on Intel wifi chips. For this, a Broadcom wifi chip needs to be acquired.|
 
 # Installation instructions
-- download and mount a macos installer onto an usb stick using opencore guide online
-- mount the efi partition of the usb stick with mountefi tool
-- download and drop the efi folder of mine onto your usb stick
-- using propertree and gensmbios, fill in the missing smbios details
-- boot your hp omen into bios and put in the appropriate settings
-- boot opencore from the usb and install macos using the installer
-- after installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
-- ready and done. unplug, reboot and stash that usb somewhere!
+- download MacOS installer by pasting the following lines in terminal:
+  ```
+  curl https://bootstrap.pypa.io/get-pip.py
+  -o get-pip.py python3 get-pip.py
+  mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py
+  ```
+- Format usb as MyVolume (MacOS extended) and make the USB bootable:
+  ```
+  sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+  ```
+- Mount the efi partition of the usb stick with [mountefi tool](https://github.com/corpnewt/MountEFI)
+- Download and drop the efi folder of mine onto your usb stick
+- Using [Propertree](https://github.com/corpnewt/ProperTree) and [gensmbios](https://github.com/corpnewt/GenSMBIOS), fill in the missing smbios details
+- Boot your hp omen into bios and put in [the appropriate settings](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#intel-bios-settings)
+- Boot opencore from the usb and install macos using the installer
+- After installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
+- Ready and done. unplug, reboot and stash that backup dummy usb somewhere!
 
 # references
 🫥
