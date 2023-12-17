@@ -123,13 +123,14 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 |Airdrop| Airdrop and Handoff are not supported on Intel wifi chips. For this, a Broadcom wifi chip needs to be acquired.|
 
 # Installation instructions
-- download MacOS installer by pasting the following lines in terminal:
+- download MacOS installer by pasting the following lines in terminal
   ```
   curl https://bootstrap.pypa.io/get-pip.py
   -o get-pip.py python3 get-pip.py
   mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py
   ```
-- Format usb as MyVolume (MacOS extended) and make the USB bootable:
+- Format USB drive as MyVolume (MacOS extended) using Disk Utility
+- Make the USB drive bootable
   ```
   sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
   ```
