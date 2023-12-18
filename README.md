@@ -15,9 +15,11 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
   ```
   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
   python3 get-pip.py
-  mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py
+  pip3 install xattr
+  mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py --seedprogram DeveloperSeed
   ```
-- After the script has created an installer, drop the downloaded installer in the "Applications" folder
+- After the script has completed, the created an installer can be found in the 'macOS installer' under the home folder
+- Drop the downloaded installer in to the "Applications" folder
 - Format USB drive as MacOS extended with the name "MyVolume" using Disk Utility
 <details>
   <summary>MacOS Disk Utility</summary>
@@ -30,9 +32,9 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
   ```
   sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
   ```
-- Mount the EFI partition of the usb stick with [mountefi tool](https://github.com/corpnewt/MountEFI)
+- Mount the EFI partition of the usb stick with [MountEFI tool](https://github.com/corpnewt/MountEFI)
 - Download, extract, Copy and paste the downloaded EFI of this github page in to the root of the EFI partition of the USB drive (it should have the path EFI/EFI/OC... etc.)
-- Using [Propertree](https://github.com/corpnewt/ProperTree) and [gensmbios](https://github.com/corpnewt/GenSMBIOS), fill in the [missing smbios details](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo)
+- Using [Propertree](https://github.com/corpnewt/ProperTree) and [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS), fill in the [missing SMBIOS details](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo)
 - Boot your HP Omen into bios and put in [the appropriate settings](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#intel-bios-settings)
 - Boot opencore from the USB drive and select MacOS installer from the menu
 - format the hard drive as APFS using the "Disk Utility" tool from the menu as shown below
