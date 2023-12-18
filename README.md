@@ -200,7 +200,7 @@ See the step-by-step [wifi patching guide for Sonoma](https://github.com/Darkspe
 - [x] "NON-HP battery" warning
 - [x] Battery percentage Readout freeze
 - [x] Battery not charging sometimes
-- [-] wake laptop by keyboard (power button works)
+- [ ] wake laptop by keyboard (power button works)
 - [ ] Can't turn on keyboard backlighting 
 - [x] replace wifi card with broadcom
 
