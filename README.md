@@ -30,6 +30,11 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 - After installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
 - Ready and done. unplug, reboot and stash that backup dummy usb somewhere!
 
+> [!CAUTION]
+> ### _After you have installed Sonoma with a Broadcom chipset, WIFI will not work!_<br><br>
+> With [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM) and [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) you are able to get functional bluetooth, but wifi requires some additional patching using [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher).<br><br>
+See the step-by-step [wifi patching guide for Sonoma](https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/blob/main/WiFi_Sonoma.md) to fix this until there is an official patch (or if Apple decides to be nice for once 😁).
+
   
 # Screenshots
 <details>
@@ -188,10 +193,6 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 | :-: | :-: |
 | dGPU | Apple dropped support for Nvidia webdrivers since High Sierra. Besides there were never MacOS drivers for the gtx 16-series.|
 | HDMI | The built-in HDMI port on this laptop is linked to dGPU. Unfortunately, there are no drivers and the dGPU is disabled.|
-|Airdrop| Airdrop and Handoff are not supported on Intel wifi chips. For this, a Broadcom wifi chip needs to be acquired.|
+|Airdrop| Airdrop and Handoff are not supported on Intel wifi chips. For this, a [Broadcom wifi chip](https://dortania.github.io/Wireless-Buyers-Guide/types-of-wireless-card/m2.html#supported-cards) needs to be acquired.|
 
 
-
-# references
-🫥
-https://dortania.github.io/OpenCore-Install-Guide/
