@@ -6,6 +6,24 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 <picture>
   <img src="https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg" alt="Ventura" style="width:500px;height:600px;">
 </picture>
+<picture>
+  <img src="https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png" alt="Ventura" style="width:500px;height:600px;">
+</picture>
+<picture>
+  <img src="https://user-images.githubusercontent.com/84881650/173489944-e32961d0-0837-4961-8d45-5c23dd7ecea7.png" alt="Ventura" style="width:500px;height:600px;">
+</picture>
+<picture>
+  <img src="https://user-images.githubusercontent.com/84881650/173489867-583de278-32a9-4345-8fff-6988a80b878b.png" alt="Ventura" style="width:500px;height:600px;">
+</picture>
+<picture>
+  <img src="https://user-images.githubusercontent.com/84881650/173489891-49daaa1c-a5bf-44ec-9a77-a76a5ec20344.jpeg" alt="Ventura" style="width:500px;height:600px;">
+</picture>
+<picture>
+  <img src="https://user-images.githubusercontent.com/84881650/180302364-be0c7a2d-2448-45d7-b06d-de74bb020d7d.jpeg" alt="Ventura" style="width:500px;height:600px;">
+</picture>
+<picture>
+  <img src="https://user-images.githubusercontent.com/84881650/180302389-261ea264-b55c-4b0e-a165-48f405692024.jpeg" alt="Ventura" style="width:500px;height:600px;">
+</picture>
 ![IMG_4645](https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg)
 ![Screenshot 2022-06-14 at 04 59 27](https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png)
 ![Screenshot 2022-06-14 at 04 56 49](https://user-images.githubusercontent.com/84881650/173489944-e32961d0-0837-4961-8d45-5c23dd7ecea7.png)
