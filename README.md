@@ -4,7 +4,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 <details>
 <summary>Screenshots</summary>
 <picture>
-  <img src="https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg" alt="Photo">
+  <img src="https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg" alt="Ventura" style="width:500px;height:600px;">
 </picture>
 ![IMG_4645](https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg)
 ![Screenshot 2022-06-14 at 04 59 27](https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png)
