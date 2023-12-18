@@ -2,15 +2,10 @@
 
 This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. In general this hackintosh project works on all HP Omen 15 DC-1xxxxx laptops with a UHD 630 and a proper SSD. 
 <summary>Screenshots</summary>
-<details>
+<picture>
     <summary>Ventura 13.6</summary>
-    <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-</picture>
 ![IMG_4645](https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg)
-</details>
+</picture>
     
 ![Screenshot 2022-06-14 at 04 59 27](https://user-images.githubusercontent.com/84881650/173489862-65fb6e78-cfee-4d56-8203-c84596c8b739.png)
 ![Screenshot 2022-06-14 at 04 56 49](https://user-images.githubusercontent.com/84881650/173489944-e32961d0-0837-4961-8d45-5c23dd7ecea7.png)
