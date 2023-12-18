@@ -33,6 +33,27 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
   
 # Screenshots
 <details>
+  <summary>Sonoma 14.2</summary>
+  <picture>
+  <img src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/7960960c-48fc-4123-80c7-3669d7ddd6b2" alt="Sonoma" style="width:500px;height:600px;">
+</picture>
+  <picture>
+  <img src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/7f08c8cb-d803-44b0-ae34-f580bc062fbf" alt="Sonoma" style="width:500px;height:600px;">
+</picture>
+  <picture>
+  <img src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/712249d3-b4fc-48b3-9f62-d3e0f311dca6" alt="Sonoma" style="width:500px;height:600px;">
+</picture>
+  <picture>
+  <img src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/00814fa5-0176-4c72-aeda-d4e9ba39ba27" alt="Sonoma" style="width:500px;height:600px;">
+</picture>
+  <picture>
+  <img src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/53e89945-c75f-4cc0-9185-954d45443f9f" alt="Sonoma" style="width:500px;height:600px;">
+</picture>
+  <picture>
+  <img src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/d86db2d3-0d74-4295-a5af-06e171aa5706" alt="Sonoma" style="width:500px;height:600px;">
+</picture>
+</details>
+<details>
 <summary>Ventura 13.6</summary>
 <picture>
   <img src="https://user-images.githubusercontent.com/84881650/173489275-d11a2264-73df-493c-99b0-b4214e23a390.jpeg" alt="Ventura" style="width:500px;height:600px;">
