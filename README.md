@@ -9,7 +9,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 
 # Installation instructions
 > [!IMPORTANT]
-> This installation method only works on MacOS. See Dortania's Opencore guide for different Operating system installation methods!
+> This installation method only works on MacOS. See Dortania's Opencore guide for different Operating system installation methods or use macOS in a virtual machine!
 - Download my EFI from the 'releases' channel.
 - Download an up-to-date MacOS installer by pasting the following lines one by one in to the terminal
   ```
