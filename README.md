@@ -13,8 +13,8 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 - Download my EFI from the 'releases' channel.
 - Download an up-to-date MacOS installer by pasting the following lines one by one in to the terminal
   ```
-  curl https://bootstrap.pypa.io/get-pip.py
-  -o get-pip.py python3 get-pip.py
+  curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+  python3 get-pip.py
   mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py
   ```
 - After the script has created an installer, drop the downloaded installer in the "Applications" folder
