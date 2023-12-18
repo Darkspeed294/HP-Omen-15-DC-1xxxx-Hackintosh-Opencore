@@ -1,11 +1,14 @@
 # HP-Omen-15-DC-1xxxx-Hackintosh-Opencore
 
 This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. In general this hackintosh project works on all HP Omen 15 DC-1xxxxx laptops with a UHD 630 and a proper SSD (original one does not work probably, check yours as it might differ from factory).
-<video width="320" height="240" autoplay loop muted>
-  <source src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/6f41a841-6626-4367-a8cd-06c35237a83d)" type="video/Webm" />
+
+<video autoplay="True" muted  loop src="https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/assets/84881650/1534629a-cae5-4bae-8223-8d675277e057" alt="HP Omen 15 DC1000">
   Your browser does not support the video tag.
 </video>
+
+
 # Installation instructions
+> [!IMPORTANT]
 > This installation method only works on MacOS. See Dortania's Opencore guide for different Operating system installation methods!
 - Download my EFI from the 'realease' channel.
 - Download an up-to-date MacOS installer by pasting the following lines one by one in to the terminal
