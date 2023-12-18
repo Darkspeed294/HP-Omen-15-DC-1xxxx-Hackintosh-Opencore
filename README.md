@@ -1,7 +1,8 @@
 # HP-Omen-15-DC-1xxxx-Hackintosh-Opencore
 
 This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. In general this hackintosh project works on all HP Omen 15 DC-1xxxxx laptops with a UHD 630 and a proper SSD. 
-#Screenshots
+
+# Screenshots
 <details>
 <summary>Ventura 13.6</summary>
 <picture>
