@@ -17,23 +17,46 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
   -o get-pip.py python3 get-pip.py
   mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py
   ```
-- Format USB drive as MyVolume (MacOS extended) using Disk Utility
-- Make the USB drive bootable
+- After the script has created an installer, drop the downloaded installer in the "Applications" folder
+- Format USB drive as MacOS extended with the name "MyVolume" using Disk Utility
+<details>
+  <summary>MacOS Disk Utility</summary>
+  <picture>
+  <img src="https://dortania.github.io/OpenCore-Install-Guide/assets/img/format-usb.83a24b13.png" alt="Disk utility" style="width:500px;height:600px;">
+</picture>
+</details>
+
+- Make the USB drive bootable by running the underlying command
   ```
   sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
   ```
-- Mount the efi partition of the usb stick with [mountefi tool](https://github.com/corpnewt/MountEFI)
-- Download and drop the efi folder of mine onto your usb stick
-- Using [Propertree](https://github.com/corpnewt/ProperTree) and [gensmbios](https://github.com/corpnewt/GenSMBIOS), fill in the missing smbios details
-- Boot your hp omen into bios and put in [the appropriate settings](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#intel-bios-settings)
-- Boot opencore from the usb and install macos using the installer
-- After installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
-- Ready and done. unplug, reboot and stash that backup dummy usb somewhere!
+- Mount the EFI partition of the usb stick with [mountefi tool](https://github.com/corpnewt/MountEFI)
+- Download, extract, Copy and paste the downloaded EFI of this github page in to the root of the EFI partition of the USB drive (it should have the path EFI/EFI/OC... etc.)
+- Using [Propertree](https://github.com/corpnewt/ProperTree) and [gensmbios](https://github.com/corpnewt/GenSMBIOS), fill in the [missing smbios details](https://dortania.github.io/OpenCore-Install-Guide/config.plist/coffee-lake.html#platforminfo)
+- Boot your HP Omen into bios and put in [the appropriate settings](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#intel-bios-settings)
+- Boot opencore from the USB drive and select MacOS installer from the menu
+- format the hard drive as APFS using the "Disk Utility" tool from the menu as shown below
+<details>
+  <summary>MacOS Installer main menu options</summary>
+  <picture>
+  <img src="https://cdsassets.apple.com/live/7WUAS350/images/macos/monterey/macos-monterey-recovery-disk.png" alt="Disk utility" style="width:500px;height:600px;">
+</picture>
+<picture>
+    <img src="https://cdsassets.apple.com/live/7WUAS350/images/macos/monterey/macos-monterey-as-recovery-mode-disk-utility-erase-volume-group.png" alt="Disk utility1" style="width:500px;height:600px;">
+</picture>
+</details>
+
+- After installation, mount both the EFI partition of the MacOS hard drive and usb and copy the EFI from the USB drive onto the EFI partition of the hard drive
+- You are good to go! make sure the Opencore bootloader is selected in the BIOS settings if it doesn't boot without boot menu.
+
+> [!TIP]
+> Stash that backup dummy usb somewhere in case something happens with the EFI on the hard drive! I have had enough experiences during development where I had to hackintosh a another machine from scratch to get my main pc running again. 
 
 > [!CAUTION]
 > ### _After you have installed Sonoma with a Broadcom chipset, WIFI will not work!_<br><br>
 > With [BrcmPatchRam](https://github.com/acidanthera/BrcmPatchRAM) and [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup) you are able to get functional bluetooth, but wifi requires some additional patching using [OCLP](https://github.com/dortania/OpenCore-Legacy-Patcher).<br><br>
-See the step-by-step [wifi patching guide for Sonoma](https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/blob/main/WiFi_Sonoma.md) to fix this until there is an official patch (or if Apple decides to be nice for once 😁).
+See the step-by-step [wifi patching guide for Sonoma](https://github.com/Darkspeed294/HP-Omen-15-DC-1xxxx-Hackintosh-Opencore/blob/main/WiFi_Sonoma.md) to fix this until there is an official patch <br>
+(or if Apple decides to be nice for once 😁).
 
   
 # Screenshots
