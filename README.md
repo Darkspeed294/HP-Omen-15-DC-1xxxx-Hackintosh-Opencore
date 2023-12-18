@@ -2,7 +2,7 @@
 
 This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. In general this hackintosh project works on all HP Omen 15 DC-1xxxxx laptops with a UHD 630 and a proper SSD. 
 # Installation instructions
-
+> This installation method only works on MacOS. See Dortania's Opencore guide for different Operating system installation methods!
 - Download my EFI from the 'realease' channel.
 - Download an up-to-date MacOS installer by pasting the following lines one by one in to the terminal
   ```
