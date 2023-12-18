@@ -1,7 +1,29 @@
 # HP-Omen-15-DC-1xxxx-Hackintosh-Opencore
 
 This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. In general this hackintosh project works on all HP Omen 15 DC-1xxxxx laptops with a UHD 630 and a proper SSD. 
+# Installation instructions
 
+- Download my EFI from the 'realease' channel.
+- Download an up-to-date MacOS installer by pasting the following lines one by one in to the terminal
+  ```
+  curl https://bootstrap.pypa.io/get-pip.py
+  -o get-pip.py python3 get-pip.py
+  mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py
+  ```
+- Format USB drive as MyVolume (MacOS extended) using Disk Utility
+- Make the USB drive bootable
+  ```
+  sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
+  ```
+- Mount the efi partition of the usb stick with [mountefi tool](https://github.com/corpnewt/MountEFI)
+- Download and drop the efi folder of mine onto your usb stick
+- Using [Propertree](https://github.com/corpnewt/ProperTree) and [gensmbios](https://github.com/corpnewt/GenSMBIOS), fill in the missing smbios details
+- Boot your hp omen into bios and put in [the appropriate settings](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#intel-bios-settings)
+- Boot opencore from the usb and install macos using the installer
+- After installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
+- Ready and done. unplug, reboot and stash that backup dummy usb somewhere!
+
+  
 # Screenshots
 <details>
 <summary>Ventura 13.6</summary>
@@ -140,25 +162,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 | HDMI | The built-in HDMI port on this laptop is linked to dGPU. Unfortunately, there are no drivers and the dGPU is disabled.|
 |Airdrop| Airdrop and Handoff are not supported on Intel wifi chips. For this, a Broadcom wifi chip needs to be acquired.|
 
-# Installation instructions
-- download MacOS installer by pasting the following lines in terminal
-  ```
-  curl https://bootstrap.pypa.io/get-pip.py
-  -o get-pip.py python3 get-pip.py
-  mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py
-  ```
-- Format USB drive as MyVolume (MacOS extended) using Disk Utility
-- Make the USB drive bootable
-  ```
-  sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/MyVolume
-  ```
-- Mount the efi partition of the usb stick with [mountefi tool](https://github.com/corpnewt/MountEFI)
-- Download and drop the efi folder of mine onto your usb stick
-- Using [Propertree](https://github.com/corpnewt/ProperTree) and [gensmbios](https://github.com/corpnewt/GenSMBIOS), fill in the missing smbios details
-- Boot your hp omen into bios and put in [the appropriate settings](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html#intel-bios-settings)
-- Boot opencore from the usb and install macos using the installer
-- After installation, mount the efi partition of the macos hard drive and usb and copy the efi from the usb onto the hard drive
-- Ready and done. unplug, reboot and stash that backup dummy usb somewhere!
+
 
 # references
 🫥
