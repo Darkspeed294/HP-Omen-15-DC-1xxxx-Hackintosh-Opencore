@@ -18,7 +18,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
   pip3 install xattr
   mkdir -p ~/macOS-installer && cd ~/macOS-installer && curl https://raw.githubusercontent.com/munki/macadmin-scripts/main/installinstallmacos.py > installinstallmacos.py && sudo python3 installinstallmacos.py --seedprogram DeveloperSeed
   ```
-- After the script has completed, the created an installer can be found in the 'macOS installer' under the home folder
+- After the script has completed, the created installer can be found in the 'macOS installer' under the home folder
 - Drop the downloaded installer in to the "Applications" folder
 - Format USB drive as MacOS extended with the name "MyVolume" using Disk Utility
 <details>
@@ -49,7 +49,7 @@ This project is dedicated to Opencore development on the HP Omen 15 DC-10008UA. 
 </details>
 
 - After installation, mount both the EFI partition of the MacOS hard drive and usb and copy the EFI from the USB drive onto the EFI partition of the hard drive
-- You are good to go! make sure the Opencore bootloader is selected in the BIOS settings if it doesn't boot without boot menu.
+- You are good to go! make sure the Opencore bootloader is in the EFI folder and selected in the BIOS settings if the laptop doesn't boot without the USB inserted.
 
 > [!TIP]
 > Stash that backup dummy usb somewhere in case something happens with the EFI on the hard drive! I have had enough experiences during development where I had to hackintosh a another machine from scratch to get my main pc running again. 
